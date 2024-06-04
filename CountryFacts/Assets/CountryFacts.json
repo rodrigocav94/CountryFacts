@@ -1,0 +1,98 @@
+[
+    {
+        "name":"Argentina",
+        "capital":"Buenos Aires",
+        "size":"2,780,400 km²",
+        "population":"45,376,763",
+        "currency":"Argentine Peso",
+        "fact":"Home to the world's first animated feature film."
+    },
+    {
+        "name":"Bolivia",
+        "capital":"Sucre (constitutional), La Paz (administrative)",
+        "size":"1,098,581 km²",
+        "population":"11,673,021",
+        "currency":"Boliviano",
+        "fact":"Has over 30 official languages."
+    },
+    {
+        "name":"Brazil",
+        "capital":"Brasília",
+        "size":"8,515,767 km²",
+        "population":"214,326,223",
+        "currency":"Brazilian Real",
+        "fact":"Hosts the world's largest carnival in Rio de Janeiro."
+    },
+    {
+        "name":"Chile",
+        "capital":"Santiago",
+        "size":"756,096 km²",
+        "population":"19,678,363",
+        "currency":"Chilean Peso",
+        "fact":"Home to the driest place on Earth, the Atacama Desert."
+    },
+    {
+        "name":"Colombia",
+        "capital":"Bogotá",
+        "size":"1,141,748 km²",
+        "population":"51,265,844",
+        "currency":"Colombian Peso",
+        "fact":"Produces 12% of the world's coffee supply."
+    },
+    {
+        "name":"Ecuador",
+        "capital":"Quito",
+        "size":"276,841 km²",
+        "population":"17,888,475",
+        "currency":"United States Dollar",
+        "fact":"Named after the equator, which runs through the country."
+    },
+    {
+        "name":"Guyana",
+        "capital":"Georgetown",
+        "size":"214,969 km²",
+        "population":"786,552",
+        "currency":"Guyanese Dollar",
+        "fact":"Only South American country where English is the official language."
+    },
+    {
+        "name":"Paraguay",
+        "capital":"Asunción",
+        "size":"406,752 km²",
+        "population":"7,252,672",
+        "currency":"Paraguayan Guarani",
+        "fact":"More than 80% of Paraguayans are bilingual in Spanish and Guarani."
+    },
+    {
+        "name":"Peru",
+        "capital":"Lima",
+        "size":"1,285,216 km²",
+        "population":"34,232,138",
+        "currency":"Peruvian Sol",
+        "fact":"Home to Machu Picchu, one of the New Seven Wonders of the World."
+    },
+    {
+        "name":"Suriname",
+        "capital":"Paramaribo",
+        "size":"163,820 km²",
+        "population":"618,040",
+        "currency":"Surinamese Dollar",
+        "fact":"Has the smallest population of any South American country."
+    },
+    {
+        "name":"Uruguay",
+        "capital":"Montevideo",
+        "size":"176,215 km²",
+        "population":"3,530,912",
+        "currency":"Uruguayan Peso",
+        "fact":"First country to legalize marijuana entirely."
+    },
+    {
+        "name":"Venezuela",
+        "capital":"Caracas",
+        "size":"916,445 km²",
+        "population":"29,069,153",
+        "currency":"Venezuelan Bolívar",
+        "fact":"Home to the world's highest uninterrupted waterfall, Angel Falls."
+    }
+]

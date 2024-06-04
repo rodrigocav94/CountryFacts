@@ -7,13 +7,40 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "CountryFacts"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        Country.all.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Row", for: indexPath)
+        let rowItem = Country.all[indexPath.row]
+        
+        var content = cell.defaultContentConfiguration()
+        content.textProperties.numberOfLines = 1
+        content.secondaryTextProperties.numberOfLines = 1
+        content.text = rowItem.name
+        content.textProperties.font = UIFont.preferredFont(forTextStyle: .headline)
+        content.secondaryText = rowItem.fact
+        content.secondaryTextProperties.color = .secondaryLabel
+        cell.contentConfiguration = content
+        cell.accessoryType = .disclosureIndicator
 
-
+        return cell
+    }
 }
 
+#Preview {
+    UIStoryboard(
+        name: "Main",
+        bundle: nil
+    )
+    .instantiateInitialViewController()!
+}
