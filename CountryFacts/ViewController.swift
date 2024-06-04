@@ -57,7 +57,7 @@ class ViewController: UITableViewController {
         
         var content = cell.defaultContentConfiguration()
         content.textProperties.numberOfLines = 1
-        content.secondaryTextProperties.numberOfLines = 1
+        content.secondaryTextProperties.numberOfLines = 0
         content.text = rowItem.name
         content.textProperties.font = UIFont.preferredFont(forTextStyle: .headline)
         content.secondaryText = rowItem.fact
