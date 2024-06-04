@@ -13,10 +13,26 @@ class DetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavBar()
+        setupLayout()
+    }
+    
+    func setupNavBar() {
         title = country?.name
         navigationItem.largeTitleDisplayMode = .never
-        view.backgroundColor = .systemBackground
         
+        let shareButton = UIBarButtonItem(
+            image: UIImage(systemName: "square.and.arrow.up"),
+            style: .plain,
+            target: self,
+            action: #selector(shareTapped)
+        )
+        
+        navigationItem.rightBarButtonItem = shareButton
+    }
+    
+    func setupLayout() {
+        view.backgroundColor = .systemBackground
         
         let flagView = UIImageView()
         flagView.image = UIImage(named: country.name)
@@ -31,7 +47,7 @@ class DetailController: UIViewController {
         vStack.alignment = .top
         vStack.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(vStack)
-
+        
         addHorizontalStack(to: vStack, title: "Name:", value: country.name)
         addHorizontalStack(to: vStack, title: "Capital:", value: country.capital)
         addHorizontalStack(to: vStack, title: "Size:", value: country.size)
@@ -70,8 +86,16 @@ class DetailController: UIViewController {
         valueLabel.numberOfLines = 0
         valueLabel.textAlignment = .right
         nameHStack.addArrangedSubview(valueLabel)
-
+        
         vStack.addArrangedSubview(nameHStack)
+    }
+    
+    @objc func shareTapped() {
+        let fact = "Fact about \(country.name): \(country.fact)"
+        
+        let vc = UIActivityViewController(activityItems: [fact], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
 }
 
