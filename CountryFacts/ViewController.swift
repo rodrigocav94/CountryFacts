@@ -27,10 +27,10 @@ class ViewController: UITableViewController {
         let alertHeight: CGFloat = 200
         let imageSize: CGFloat = 60
         let imageHPosition = (alertWidth / 2) - (imageSize / 2)
-        let imageVPosition = 82
+        let imageVPosition: CGFloat = 82
         
         let showAlert = UIAlertController(title: "CountryFacts", message: "An app to display facts about South American countries.", preferredStyle: .alert)
-        let imageView = UIImageView(frame: CGRect(x: imageHPosition, y: 82, width: imageSize, height: imageSize))
+        let imageView = UIImageView(frame: CGRect(x: imageHPosition, y: imageVPosition, width: imageSize, height: imageSize))
         
         imageView.image = UIImage(systemName: "globe.desk", withConfiguration: UIImage.SymbolConfiguration(pointSize: 16, weight: .light))
         imageView.contentMode = .scaleAspectFit
